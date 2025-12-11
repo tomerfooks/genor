@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Users Dashboard - A modern React application for managing and exploring users" />
+    <title>Users Dashboard</title>
+    <script>
+      // Prevent flash of wrong theme
+      (function() {
+        const theme = localStorage.getItem('users-dashboard-theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+          document.documentElement.classList.remove('light');
+        }
+      })();
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

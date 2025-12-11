@@ -1,0 +1,1 @@
+export { JsonPlaceholderUserRepository } from './JsonPlaceholderUserRepository';
