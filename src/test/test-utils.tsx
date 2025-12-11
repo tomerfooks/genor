@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import { render, type RenderOptions } from '@testing-library/react';
-import { ThemeProvider } from '@/hooks';
+import { ThemeProvider } from '@/presentation/hooks';
 
 /**
  * Custom render function that wraps components with necessary providers

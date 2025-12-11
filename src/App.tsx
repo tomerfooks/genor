@@ -1,4 +1,4 @@
-import { Layout, UsersDashboard } from '@/components';
+import { Layout, UsersDashboard } from '@/presentation/components';
 
 /**
  * Main Application Component
